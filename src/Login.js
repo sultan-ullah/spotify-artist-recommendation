@@ -2,7 +2,7 @@ import React from 'react';
 
 const login = (props) => {
     var clientId = '14b4201cd7a14ba09d298bb2b48cc09a'; // Your client id
-    var redirectUri = 'https://dazzling-cori-0d0d03.netlify.com/'; // Your redirect uri
+    var redirectUri = 'http://localhost:3000/'; // Your redirect uri
     var scope = '';
     var state = '123';  
       
@@ -14,10 +14,12 @@ const login = (props) => {
     '&states=' + encodeURIComponent(state);
 
     const containerStyle = {
-        padding: '30px'
+        padding: '30px',
+        margin: '0 auto',
       };
       const titleStyle = {
-        marginBottom: '20px'
+        marginBottom: '20px',
+        textAlign: 'center'
       }
       const buttonStyle = {
         width: '200px',
@@ -27,27 +29,26 @@ const login = (props) => {
         textAlign: 'center',
         padding: '10px',
         marginBottom: '10px',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        margin: '0 auto'
       }
 
       const linkStyle = {
           textDecoration: 'none'
       }
-
+      let child = {}
     if (!window.location.hash) {
-        return (
-            <div style={containerStyle}>
-                <h3 style={titleStyle}>DiscoverArtists</h3>
-                <a style={linkStyle} href={url}><div style={buttonStyle}>Login To Spotify</div></a>
-            </div>
-            );
+        child = <a style={linkStyle} href={url}><div style={buttonStyle}>Login To Spotify</div></a>;
     } else {
-        return (
+        child = <>{props.children}</>;
+    }
+    
+    return (
         <div style={containerStyle}>
-            <h3 style={titleStyle}>DiscoverArtists</h3>
-            {props.children}
-        </div>);
-    }    
+            <h1 style={titleStyle}>DiscoverArtists</h1>
+            {child}
+        </div>
+    );
 }
 
 export default login;

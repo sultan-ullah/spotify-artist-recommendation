@@ -58,6 +58,11 @@ class App extends Component {
           });
         }
       });
+    } else {
+      this.setState({
+        ...this.state,
+        artistList: ''
+      });
     }
   }
 

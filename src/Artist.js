@@ -4,7 +4,7 @@ const artist = ({name, image, onClickHandler}) => {
   const containerStyle = {
     display: 'flex',
     alignItems: 'center',
-    paddingBottom: '10px'
+    paddingBottom: '10px',
   }
 
   const imageStyle = {
