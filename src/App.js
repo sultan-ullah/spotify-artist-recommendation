@@ -24,16 +24,12 @@ class App extends Component {
   }
 
   setClientTokens() {
-    console.log("got here")
     let pathArray = window.location.hash.split('&');
     let clientInfo  = {};
-    console.log(window.location)
-
     pathArray.forEach((item, index) => {
       let split = item.split('=');
       clientInfo[split[0].replace('#', '')] = split[1];
     });
-    console.log(clientInfo.access_token)
     if (clientInfo.access_token !== undefined) {
       this.state = {
         ...this.state,
@@ -41,7 +37,6 @@ class App extends Component {
       }; 
       this.spotify.setAccessToken(clientInfo.access_token);
     }
-    
   }
 
   onChangeHandler(event) {
