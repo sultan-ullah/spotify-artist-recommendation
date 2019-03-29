@@ -2,7 +2,7 @@ import React from 'react';
 
 const login = (props) => {
     var clientId = '14b4201cd7a14ba09d298bb2b48cc09a'; // Your client id
-    var redirectUri = 'http://localhost:3000/'; // Your redirect uri
+    var redirectUri = 'https://dazzling-cori-0d0d03.netlify.com/'; // Your redirect uri
     var scope = '';
     var state = '123';  
       
