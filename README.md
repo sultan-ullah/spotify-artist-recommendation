@@ -1,68 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# DiscoverArtists
 
-## Available Scripts
+A reccomendation engine made with React and the Spotify API
 
-In the project directory, you can run:
+## How it Works
 
-### `npm start`
+Login to the web application using spotify and type any desired artist using the dynamic search. 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once you find the artist you are looking for click on the image/picture to be taken to a page with reccomendations.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Click on the Spotify icon to open the spotify application (if one is available) and navigate to the respective artists Spotify page
 
-### `npm test`
+## Lessons Learned
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React functional and class based components
+- State in React applications and how to modify it safely
+- Spotify Web API, making API calls and retrieving data through REST
+- Static Page Application paradigms
 
-### `npm run build`
+## Live Demo
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Live Working Demo](https://dazzling-cori-0d0d03.netlify.com)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+<a href="https://media.giphy.com/media/9G1A1PJb2ImYuB8U0I/giphy.gif"><img src="https://media.giphy.com/media/9G1A1PJb2ImYuB8U0I/giphy.gif" /></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
