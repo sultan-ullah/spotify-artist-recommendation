@@ -13,7 +13,8 @@ const info = ({name, buttonHandler}) => {
     }
 
     const textStyle = {
-        margin: '20px 0'
+        margin: '20px 0',
+        fontSize: '2em'
     }
 
 
