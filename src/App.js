@@ -31,10 +31,10 @@ class App extends Component {
       clientInfo[split[0].replace('#', '')] = split[1];
     });
     if (clientInfo.access_token !== undefined) {
-      this.setState({
+      this.state = {
         ...this.state,
         loggedIn: true
-      }); 
+      }; 
       this.spotify.setAccessToken(clientInfo.access_token);
     }
   }
@@ -49,6 +49,7 @@ class App extends Component {
               key={item.id}
               name={item.name}
               image={(item.images[2]) ? item.images[2].url: 'https://via.placeholder.com/70'}
+              link={item.uri}
               onClickHandler={() => this.onClickHandler(item.id, item.name, event)}
             />
           });
@@ -88,10 +89,12 @@ class App extends Component {
       if (error) console.log(error);
       else {
         let relatedArtists = data.artists.map((item) => {
+          console.log(item);
           return <Artist 
             key={item.id}
             name={item.name}
             image={(item.images[2]) ? item.images[2].url: 'https://via.placeholder.com/70'}
+            link={item.uri}
             onClickHandler={() => this.onClickHandler(item.id, item.name, event)}
           />
         });

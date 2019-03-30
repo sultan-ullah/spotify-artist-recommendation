@@ -1,6 +1,6 @@
 import React from "react";
-
-const artist = ({name, image, onClickHandler}) => {
+import spotifyIcon from "./spotify-icon.png";
+const artist = ({name, image, link, onClickHandler}) => {
   const containerStyle = {
     display: 'flex',
     alignItems: 'center',
@@ -17,10 +17,20 @@ const artist = ({name, image, onClickHandler}) => {
     fontSize: '1.2em',
     fontWeight: 'bolder'
   }
+
+  const mainContainerStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  }
+
   return (
-    <div style={containerStyle} onClick={onClickHandler}>
+    <div style={mainContainerStyle}>
+      <div style={containerStyle} onClick={onClickHandler}> 
       <img src={image} style={imageStyle}/>
       <div style={nameStyle}>{name}</div>
+      </div>
+      <a href={link}><div><img src={spotifyIcon} style={{width: '30px', height: '30px'}}/></div></a>
     </div>
   );
 }
