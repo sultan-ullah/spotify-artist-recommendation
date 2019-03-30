@@ -5,6 +5,7 @@ const artist = ({name, image, link, onClickHandler}) => {
     display: 'flex',
     alignItems: 'center',
     paddingBottom: '10px',
+    cursor: 'pointer'
   }
 
   const imageStyle = {
