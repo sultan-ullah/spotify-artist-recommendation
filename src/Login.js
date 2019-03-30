@@ -16,6 +16,7 @@ const login = (props) => {
     const containerStyle = {
         padding: '30px',
         margin: '0 auto',
+        maxWidth: '600px'
       };
       const titleStyle = {
         marginBottom: '20px',

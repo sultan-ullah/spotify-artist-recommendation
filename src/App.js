@@ -31,10 +31,10 @@ class App extends Component {
       clientInfo[split[0].replace('#', '')] = split[1];
     });
     if (clientInfo.access_token !== undefined) {
-      this.state = {
+      this.setState({
         ...this.state,
         loggedIn: true
-      }; 
+      }); 
       this.spotify.setAccessToken(clientInfo.access_token);
     }
   }
